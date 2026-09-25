@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INSTITUTO FEDERAL DA PARAÍBA - CONSELHO SUPERIOR</h1>
+    <h2>ANEXO I - DOCUMENTO DE RECOMENDAÇÃO ACADÊMICA</h2>
+    <p>A Resolução nº 142, de 02 de outubro de 2015, do Conselho Superior do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba (IFPB), dispõe sobre as normas, critérios e procedimentos para a mobilidade acadêmica nacional e internacional de estudantes da instituição.</p>
+
+    <form 
+        action="/enviar-recomendacao"
+        method="POST"
+    >
+        <fieldset>
+            <legend>1. Dados do Instituto Federal da Paraíba</legend>
+            <label for="curso">Curso: </label>
+            <input type="text" name="curso">
+            <label for="campus">Campus: </label>
+            <select name="campus" id="campus">
+                <option value="GB">Guarabira</option>
+                <option value="JP">João Pessoa</option>
+                <option value="CB">Cabedelo</option>
+                <option value="CG">Campina Grande</option>
+            </select>
+            
+            <label for="orientador">Professor orientador:</label>
+            <input type="text" name="orientador">
+
+            <label for="email_docente">E-mail do Docente:</label>
+            <input type="text" name="email_docente">
+
+            <label for="telefones">Telefones:</label>
+            <input type="tel" name="telefones" id="telefones">
+        </fieldset>
+        
+        <fieldset>
+            <legend>2. Dados do(a) Candidato(a)</legend>
+            <label for="nome_candidato">Nome Completo:</label>
+            <input type="text" name="nome_candidato">
+            <label for="curso_ifpb">Curso no IFPB:</label>
+            <input type="text" name="curso_ifpb">
+            <label for="periodo_curso">Período Atual de Curso:</label>
+            <input type="number" name="periodo_curso" min="1" max="6">
+            <label for="pais">País/Local da Mobilidade:</label>
+            <input type="text" name="pais">
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Informações sobre o(a) Professor(a)/Orientador(a)</legend>
+            <label for="conheco_desde">Conheço o(a) candidato(a) desde</label>
+            <input type="number" name="conheco_desde" id="conheco_desde" min="2000" max="2100">
+            <label for="vinculo">Com relação ao(à) candidato(a) fui seu(sua):</label>
+            
+            <input type="radio" name="vinculo" id="">
+            <label for="professor">Professor(a) em disciplina de graduação</label>
+            
+            <input type="radio" name="vinculo" id="">
+            <label for="professor">Orientador(a) de estágio ou projeto de curso</label>
+            
+            <input type="radio" name="vinculo" id="">
+            <label for="professor">Orientador(a) de iniciação científica / tecnológica</label>
+            
+            <input type="radio" name="vinculo" id="">
+            <label for="outro">Outro</label>
+        </fieldset>
+        <fieldset>
+            <legend>4. Avaliação do(a) Candidato(a)</legend>
+            <table>
+                <thead>
+                    <th>Competências a Avaliar</th>
+                    <th>Excelente</th>
+                    <th>Bom</th>
+                    <th>Regular</th>
+                    <th>Insatisfatório</th>
+                    <th>Não Aplicável</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Capacidade Intelectual</th>
+                        <td><input type="radio" name="linha1"></td>
+                        <td><input type="radio" name="linha1"></td>
+                        <td><input type="radio" name="linha1"></td>
+                        <td><input type="radio" name="linha1"></td>
+                        <td><input type="radio" name="linha1"></td>
+                    </tr>
+                    <tr>
+                        <th>Motivação para os estudos</th>
+                        <td><input type="radio" name="linha2"></td>
+                        <td><input type="radio" name="linha2"></td>
+                        <td><input type="radio" name="linha2"></td>
+                        <td><input type="radio" name="linha2"></td>
+                        <td><input type="radio" name="linha2"></td>
+                    </tr>
+                    <tr>
+                        <th>Capacidade para trabalho em equipe</th>
+                        <td><input type="radio" name="linha3"></td>
+                        <td><input type="radio" name="linha3"></td>
+                        <td><input type="radio" name="linha3"></td>
+                        <td><input type="radio" name="linha3"></td>
+                        <td><input type="radio" name="linha3"></td>
+                    </tr>
+                    <tr>
+                        <th>Facilidade de expressão escrita/redação</th>
+                        <td><input type="radio" name="linha4"></td>
+                        <td><input type="radio" name="linha4"></td>
+                        <td><input type="radio" name="linha4"></td>
+                        <td><input type="radio" name="linha4"></td>
+                        <td><input type="radio" name="linha4"></td>
+                    </tr>
+                    <tr>
+                        <th>Facilidade de Expressão Oral</th>
+                        <td><input type="radio" name="linha5"></td>
+                        <td><input type="radio" name="linha5"></td>
+                        <td><input type="radio" name="linha5"></td>
+                        <td><input type="radio" name="linha5"></td>
+                        <td><input type="radio" name="linha5"></td>
+                    </tr>
+                    <tr>
+                        <th>Iniciativa</th>
+                        <td><input type="radio" name="linha6"></td>
+                        <td><input type="radio" name="linha6"></td>
+                        <td><input type="radio" name="linha6"></td>
+                        <td><input type="radio" name="linha6"></td>
+                        <td><input type="radio" name="linha6"></td>
+                    </tr>
+                    <tr>
+                        <th>Criatividade</th>
+                        <td><input type="radio" name="linha7"></td>
+                        <td><input type="radio" name="linha7"></td>
+                        <td><input type="radio" name="linha7"></td>
+                        <td><input type="radio" name="linha7"></td>
+                        <td><input type="radio" name="linha7"></td>
+                    </tr>
+                    <tr>
+                        <th>Liderança</th>
+                        <td><input type="radio" name="linha8"></td>
+                        <td><input type="radio" name="linha8"></td>
+                        <td><input type="radio" name="linha8"></td>
+                        <td><input type="radio" name="linha8"></td>
+                        <td><input type="radio" name="linha8"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <textarea name="comentarios" id="comentarios" rows="5" cols="60" placeholder="Entre com os seus comentários"></textarea>
+        <input type="date">
+        <input type="submit" value="Enviar Recomendação">
+        <input type="reset" value="Limpar Ficha">
+    </form>
+</body>
+</html>
